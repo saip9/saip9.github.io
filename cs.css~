@@ -1,0 +1,7 @@
+body {
+    background-color: lightcyan;
+}
+#link2 {
+    text-align: right;
+}
+

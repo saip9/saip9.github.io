@@ -1,0 +1,12 @@
+body {
+    background-color: beige;
+}
+h1 {
+    color: darkred;
+}
+h2 {
+    color: red;
+}
+#link {
+    text-align: right;
+}
