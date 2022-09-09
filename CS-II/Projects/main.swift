@@ -3,36 +3,6 @@
 
 print("Hello!")
 print("This program sorts the words you enter alphabetically")
-/*
-var requiredWords = 2
-print("Please enter a word below")
-if requiredWords > 0 {
-if let newWord = readLine() {
-    print("Please enter one more word")
-    let newWord2 = readLine() 
-}
-}
-print("If you want to enter more words, please enter each word on a new line. If at any time, you would like to stop entering new words please enter [leave] to exit the program.")
-*/
-
-
-
-
-//-----------Need to find a way to add user the user input to the list because the input is currently a String.Type as it is assigned to readLine() --------------------
-// ------------- Also,  we have to make sure that the user has to enter two words. ----------------------------------------
-  
-//    listWords.append(input)
-
-
-
-//listWords.sort()
-
-
-
-//prints each of the words on separate lines
-
-
-//alphabetSort()
 
 
 var unsortedArray: [String] = []
@@ -71,32 +41,27 @@ func sort () {
 while moreWords {
     
     if let input = readLine() {
-
+        
         if input == "leave" {
             moreWords = false
-   print  ("Thank you for your input. Your words will be shorted shortly.")
+            print  ("Thank you for your input. Your words will be shorted shortly.")
             break
         }
-
- 
-
-//print("Hello!")
-//print("This program sorts the words you enter alphabetically")
         
-//var requiredWords = 2
-print("Please enter a word below")
-//if requiredWords > 0 {
-    if let newWord = readLine() {
-                  unsortedArray.append(newWord.lowercased())
-    print("Please enter one more word")
-    if   let newWord2 = readLine() {
-       unsortedArray.append(newWord2.lowercased())
-    }
-    }
-//}
+        
+        
+        print("Please enter a word below")
+        if let newWord = readLine() {
+            unsortedArray.append(newWord.lowercased())
+            print("Please enter one more word")
+            if   let newWord2 = readLine() {
+                unsortedArray.append(newWord2.lowercased())
+            }
+        }
+
 print("If you want to enter more words, please enter each word on a new line. If at any time, you would like to stop entering new words please enter [leave] to exit the program.")
-        unsortedArray.append(input.lowercased())
-           //     unsortedArray.append(newWord.lowercased())
+unsortedArray.append(input.lowercased())
+
     }
 }
 
