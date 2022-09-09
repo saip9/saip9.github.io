@@ -1,15 +1,20 @@
-
+import Foundation
 //Opening message
-
+func clear () {
+    for _ in 1 ... 100 {
+        print("")
+    }
+}
+clear()
 print("Hello!")
+sleep(1)
 print("This program sorts the words you enter alphabetically")
-
+sleep(2)
+print("")
 
 var unsortedArray: [String] = []
 
 var i: Int
-
-var moreWords = true
 
 func swap (words:inout [String], firstIndex: Int, secondIndex: Int) {
     let temp = words[firstIndex]
@@ -21,8 +26,8 @@ func sort () {
     if unsortedArray.count > 1 {
         for i in 0 ..< unsortedArray.count{
             for j in 1 ..< unsortedArray.count - i{
-                var word2 : String = unsortedArray[j]
-                var word1 : String = unsortedArray[j-1]
+                let word2 : String = unsortedArray[j]
+                let word1 : String = unsortedArray[j-1]
                 for k in 0..<word2.count {
                     let char2 = word2[word2.index(word2.startIndex, offsetBy: k)]
                     let char1 = word1[word1.index(word1.startIndex, offsetBy: k)]
@@ -37,114 +42,24 @@ func sort () {
         }
     }
 }
-
-while moreWords {
-    
+print("Please enter at least two words below, type 'leave' when you are ready to sort.")
+while (1 + 1 == 2) {
     if let input = readLine() {
-        
-        if input == "leave" {
-            moreWords = false
-            print  ("Thank you for your input. Your words will be shorted shortly.")
+
+        if input == "leave" || input == "Leave" {
+            print("")
+            print("Thank you for your input. Your words will be shorted shortly.")
             break
+        } else {
+            unsortedArray.append(input.lowercased())
         }
-        
-        
-        
-        print("Please enter a word below")
-        if let newWord = readLine() {
-            unsortedArray.append(newWord.lowercased())
-            print("Please enter one more word")
-            if   let newWord2 = readLine() {
-                unsortedArray.append(newWord2.lowercased())
-            }
-        }
-
-print("If you want to enter more words, please enter each word on a new line. If at any time, you would like to stop entering new words please enter [leave] to exit the program.")
-unsortedArray.append(input.lowercased())
-
     }
 }
-
 sort()
 
 i = 0
 
 while i < unsortedArray.count {
-    print("\(unsortedArray[i])")
-    i += 1
-}
-
-
----------------------------------------------
-
-
-var unsortedArray: [String] = []
-
-var i: Int
-
-var moreWords = true
-
-print("Hello!")
-print("This program sorts the words you enter alphabetically")
-/*
-var requiredWords = 2
-print("Please enter a word below")
-if requiredWords > 0 {
-    if let newWord = readLine() {
-        print("Please enter one more word")
-        let newWord2 = readLine() 
-    }
-    }
-    
- */
-
-func swap (words:inout [String], firstIndex: Int, secondIndex: Int) {
-    let temp = words[firstIndex]
-    words[firstIndex] = words[secondIndex]
-    words[secondIndex] = temp
-}
-
-func sort () {
-    if unsortedArray.count > 1 {
-        for i in 0 ..< unsortedArray.count{
-            for j in 1 ..< unsortedArray.count - i{
-                var word2 : String = unsortedArray[j]
-                var word1 : String = unsortedArray[j-1]
-                for k in 0..<word2.count {
-                    let char2 = word2[word2.index(word2.startIndex, offsetBy: k)]
-                    let char1 = word1[word1.index(word1.startIndex, offsetBy: k)]
-                    if char2 > char1 {
-                        break
-                    } else if char2 < char1 {
-                        swap(words:&unsortedArray, firstIndex: j, secondIndex: (j-1))
-                        break
-                    }
-                }
-            }
-        }
-    }
-}
-
-print("Please enter 2 words below. Type 'leave' when you're ready to sort your words!")
-
-while moreWords {
-    if let input = readLine() {
-        if input == "leave" {
-            print("---------------------------------")
-            break
-        }
-        
-        unsortedArray.append(input.lowercased())
-    }
-}
-
-
-
-sort()
-
-i = 0
-
-while i < unsortedArray.count {
-    print("\(unsortedArray[i])")
+    print("\(i+1). \(unsortedArray[i])")
     i += 1
 }
