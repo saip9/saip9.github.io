@@ -38,15 +38,6 @@ func sort () {
     }
 }
 
-while moreWords {
-    
-    if let input = readLine() {
-        
-        if input == "leave" {
-            moreWords = false
-            print  ("Thank you for your input. Your words will be shorted shortly.")
-            break
-        }
         
         
         
@@ -60,10 +51,24 @@ while moreWords {
         }
 
 print("If you want to enter more words, please enter each word on a new line. If at any time, you would like to stop entering new words please enter [leave] to exit the program.")
-unsortedArray.append(input.lowercased())
 
+while moreWords {
+    
+    if let input = readLine() {
+    
+        if input == "leave" {
+            moreWords = false
+            print  ("Thank you for your input. Your words will be shorted shortly.")
+            break
+        }
+        else {
+            unsortedArray.append(input.lowercased())
+        }
     }
 }
+    
+    
+
 
 sort()
 
