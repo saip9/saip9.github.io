@@ -20,8 +20,6 @@ sleep(1)
 
 print("This program sorts the words you enter alphabetically")
 
-sleep(2)
-
 print("")
 
 
