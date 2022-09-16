@@ -56,8 +56,11 @@ func sort () {
                 
                 let word1 : String = unsortedArray[j-1]
                 
-                for k in 0..<word2.count {
-                    
+                let shorterWordLength = min(word1.count, word2.count)
+                
+                //for k in 0..<word2.count {
+                  for k in 0..<shorterWordLength {
+                      
                     let char2 = word2[word2.index(word2.startIndex, offsetBy: k)]
                     
                     let char1 = word1[word1.index(word1.startIndex, offsetBy: k)]
@@ -74,7 +77,8 @@ func sort () {
    
                     }
 
-                    else if (word2.count > word1.count) || (word1.count > word2.count){
+                    //else if (word2.count > word1.count) || (word1.count > word2.count){
+                      else if word1.count > word2.count {
                         swap(words:&unsortedArray, firstIndex: j, secondIndex: (j-1))
                     }
                
