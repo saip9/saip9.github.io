@@ -89,32 +89,13 @@ func sort () {
     
 }
 
-print("Please enter at least two words below, type 'leave' when you are ready to sort.")
+print("Please enter at least two words below.")
 
-while (1 + 1 == 2) {
-    
-    if let input = readLine() {
-        
 
-        
-        if input == "leave" || input == "Leave" {
-            
-            print("")
-            
-            print("Thank you for your input. Your words will be shorted shortly.")
-            
-            break
-            
-        } else {
-            
-            unsortedArray.append(input.lowercased())
-            
-        }
-        
-    }
-    
+while let input = readLine() {
+    unsortedArray.append(input.lowercased())
 }
-
+    
 sort()
 
 
