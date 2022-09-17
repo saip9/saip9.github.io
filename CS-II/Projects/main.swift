@@ -58,7 +58,18 @@ func sort () {
                     
                     break
                     
+                } else if char2 == char1 {
+                    if char2 < char1 {
+                    while char2 == char1 {
+                    unsortedArray.swapAt(j, j-1)
+                    break
+                    }
+                    }
+                    if char1 > char2 {
+                        break
+                    }
                 }
+                
                 
             }
             
