@@ -1,194 +1,74 @@
 import Foundation
 
-
-
 //Opening message
-
-
-
-func clear () {
-    
-
-    
-    for _ in 1 ... 50 {
-        
-
-        
+var x = 50
+func clearScreen() {
+    while x < 50 {
         print("")
-        
+        x-=1
 
-        
-    }
-    
 
-    
 }
 
 
-
-clear()
-
-
-
-print("Hello!")
-
-
-
-sleep(1)
-
-
-
-print("This program sorts the words you enter alphabetically. Please enter at least two words to procced sorting.")
-
-
+clearScreen()
+print("This program sorts the words you enter alphabetically.")
 
 print("")
 
-
-
-
-
-
+//Declare variables & arrays
 
 var unsortedArray: [String] = []
 
 
 
-
-
-
-
-var i: Int
-
-
-
-
-
-
-
-func swap (words:inout [String], firstIndex: Int, secondIndex: Int) {
-    
-
-    
-    let temp = words[firstIndex]
-    
-
-    
-    words[firstIndex] = words[secondIndex]
-    
-
-    
-    words[secondIndex] = temp
-    
-
-    
-}
-
-
-
-
-
-
+//sorting function
 
 func sort () {
     
-
+    //selects the words that you are using in the array
     
-    if unsortedArray.count > 1 {
+    for i in 0 ..< unsortedArray.count{
         
-
-        
-        for i in 0 ..< unsortedArray.count{
+        for j in 1 ..< unsortedArray.count - i{
             
-
+            let word2 : String = unsortedArray[j]
             
-            for j in 1 ..< unsortedArray.count - i{
+            let word1 : String = unsortedArray[j-1]
+            
+            for k in 0..<word2.count {
                 
-
+                //analyizes individual characters
                 
-                let word2 : String = unsortedArray[j]
+                let char2 = word2[word2.index(word2.startIndex, offsetBy: k)]
                 
-
+                let char1 = word1[word1.index(word1.startIndex, offsetBy: k)]
                 
-                let word1 : String = unsortedArray[j-1]
-                
-
-                
-                let shorterWordLength = min(word1.count, word2.count)
-                
-
-                
-                //for k in 0..<word2.count {
-                
-                for k in 0..<shorterWordLength {
+                if char2 > char1 {
                     
-
+                    //continues the loop
                     
-                    let char2 = word2[word2.index(word2.startIndex, offsetBy: k)]
+                    break
                     
-
+                } else if char2 < char1 {
                     
-                    let char1 = word1[word1.index(word1.startIndex, offsetBy: k)]
+                    //swaps positions
                     
-
+                    unsortedArray.swapAt(j, j-1)
                     
-                    if char2 > char1 {
-                        
-
-                        
-                        break
-                        
-
-                        
-                    } else if char2 < char1 {
-                        
-
-                        
-                        swap(words:&unsortedArray, firstIndex: j, secondIndex: (j-1))
-                        
-
-                        
-                        break
-                        
-
-                        
-                    }
-                    
-
-                    
-                    //else if (word2.count > word1.count) || (word1.count > word2.count){
-                    
-                    else if word1.count > word2.count {
-                        
-                        swap(words:&unsortedArray, firstIndex: j, secondIndex: (j-1))
-                        
-                    }
-                    
-
-                    
-
+                    break
                     
                 }
                 
-
-                
             }
-            
-
             
         }
         
-
-        
     }
-    
-
     
 }
 
-
-
-
+//made for the test.txt file
 
 
 
@@ -204,28 +84,10 @@ sort()
 
 
 
+//prints out results
 
-
-
-
-i = 0
-
-
-
-
-
-
-
-while i < unsortedArray.count {
-    
-
+for i in 0 ..< unsortedArray.count{
     
     print("\(i+1). \(unsortedArray[i])")
-    
-
-    
-    i += 1
-    
-
     
 }
