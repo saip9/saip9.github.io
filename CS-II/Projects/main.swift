@@ -1,26 +1,52 @@
 import Foundation
 
+
+
 //Opening message
+
+
 
 func clear () {
     
-    for _ in 1 ... 100 {
+
+    
+    for _ in 1 ... 50 {
+        
+
         
         print("")
         
+
+        
     }
+    
+
     
 }
 
+
+
 clear()
+
+
 
 print("Hello!")
 
+
+
 sleep(1)
 
-print("This program sorts the words you enter alphabetically")
+
+
+print("This program sorts the words you enter alphabetically. Please enter at least two words to procced sorting.")
+
+
 
 print("")
+
+
+
+
 
 
 
@@ -28,79 +54,157 @@ var unsortedArray: [String] = []
 
 
 
+
+
+
+
 var i: Int
+
+
+
+
 
 
 
 func swap (words:inout [String], firstIndex: Int, secondIndex: Int) {
     
+
+    
     let temp = words[firstIndex]
+    
+
     
     words[firstIndex] = words[secondIndex]
     
+
+    
     words[secondIndex] = temp
     
+
+    
 }
+
+
+
+
 
 
 
 func sort () {
     
+
+    
     if unsortedArray.count > 1 {
+        
+
         
         for i in 0 ..< unsortedArray.count{
             
+
+            
             for j in 1 ..< unsortedArray.count - i{
+                
+
                 
                 let word2 : String = unsortedArray[j]
                 
+
+                
                 let word1 : String = unsortedArray[j-1]
+                
+
                 
                 let shorterWordLength = min(word1.count, word2.count)
                 
+
+                
                 //for k in 0..<word2.count {
-                  for k in 0..<shorterWordLength {
-                      
+                
+                for k in 0..<shorterWordLength {
+                    
+
+                    
                     let char2 = word2[word2.index(word2.startIndex, offsetBy: k)]
+                    
+
                     
                     let char1 = word1[word1.index(word1.startIndex, offsetBy: k)]
                     
+
+                    
                     if char2 > char1 {
                         
+
+                        
                         break
+                        
+
                         
                     } else if char2 < char1 {
                         
+
+                        
                         swap(words:&unsortedArray, firstIndex: j, secondIndex: (j-1))
                         
-                        break
-   
-                    }
 
-                    //else if (word2.count > word1.count) || (word1.count > word2.count){
-                      else if word1.count > word2.count {
-                        swap(words:&unsortedArray, firstIndex: j, secondIndex: (j-1))
+                        
+                        break
+                        
+
+                        
                     }
-               
+                    
+
+                    
+                    //else if (word2.count > word1.count) || (word1.count > word2.count){
+                    
+                    else if word1.count > word2.count {
+                        
+                        swap(words:&unsortedArray, firstIndex: j, secondIndex: (j-1))
+                        
+                    }
+                    
+
+                    
+
                     
                 }
                 
+
+                
             }
+            
+
             
         }
         
+
+        
     }
+    
+
     
 }
 
-print("Please enter at least two words below.")
+
+
+
+
 
 
 while let input = readLine() {
-    unsortedArray.append(input.lowercased())
-}
     
+    unsortedArray.append(input.lowercased())
+    
+}
+
+
+
 sort()
+
+
+
+
 
 
 
@@ -108,10 +212,20 @@ i = 0
 
 
 
+
+
+
+
 while i < unsortedArray.count {
+    
+
     
     print("\(i+1). \(unsortedArray[i])")
     
+
+    
     i += 1
+    
+
     
 }
