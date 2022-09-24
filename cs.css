@@ -7,5 +7,16 @@ body {
 
 h1 {
     color: darkgreen;
-
+    text-align: center;
 }
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+
+

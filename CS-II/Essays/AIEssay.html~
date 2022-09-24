@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <title> AI Sentience Essay</title>
+    
+  </head>
+  
+
+  
+  <body>
+     <link rel="stylesheet" type="text/css" href="AI Sentience.css" />  
+
+    
+    <div class="header">
+      
+      <h1>AI Sentience</h1>
+      
+      
+      
+    </div>
+    
+
+    
+    <div class="content">
+      
+      
+      <p class   ="indent"> Artificial intelligence (AI) is becoming more and more popular every single day, now being talked about it by the common people. The term artificial intelligence refers to a robot or a computer controlled machine which can complete tasks that a human could do. Lately, there has been a discussion over sentient robots/AI having the ability to express feelings and emotions (Metz 2022). Sentient AI is beneficial but it can lead to a wide range of problems like racial systematic class differences, and loss of jobs in certain sections of the workforce.   </p>
+
+      
+
+      <p class="indent">
+	One of the primary reasons that sentient AI is beneficial but it can lead to a wide range of problems is because of the racial inequality that arises during the testing of AIs. For example, the Google Photos AI which was responsible for creating labels for the photos provided, it wrote gorillas for the caption/label of a photo with African colored men (Alba 2022). Furthermore, it highlights the importance that the data and knowledge being fed into the AI system must not be biased, and should be gathered from all different sources.  In addition, court systems who used AI to find the probability of criminals repeating the offense again in the future found that artificial intelligence found that colored people were more likely to commit the crime again in the future than their white counterparts even though it is not true. For instance, the AI system explained that Brisha Borden who was an African female was given a risk score of 8 out of 10 for committing the same or a different crime again which was 4 juvenile misdemeanors. Her white male counterpart was given a risk score of 3 out of 10 for committing the same or a different crime again which was 2 armed robberies, 1 attempted robbery (Angwin 2016). The interesting thing was that the white male committed 1 grand theft after being released from jail. This example is one of the many that happened that show how AI’s can be biased towards skin color or racial classes. Having an AI that is sentient will add more fuel power to this ongoing problem. Furthermore, a robot having feelings could even further complicate the racial issues that are present in America and around the world.
+      </p>
+
+    
+      
+      <p class="indent">
+
+	The other reason for the sentient AI is beneficial but it could lead to a wide range of problems is that it could lead to loss of jobs in certain sections of the workforce. For example, more than 260,000 jobs have been lost due to artificial intelligence and automation (Zippia 2022). Over the years, the cost of hiring AI’s over humans have been decreasing rapidly, making it profitable for companies as robots could complete tasks rapidly. By robots having feelings and emotions, organizations would be even more compelled to hire these creatures as they could be deployed in even more sectors of the labor force such as healthcare, and counseling facilities. For instance, the automotive industry hires robots which consists of 38% of the entire workforce (Zippia 2022). With sentient AI, it can accomplish more tasks then its previous predecessors leading to decline in hiring of humans. 
+
+      </p>
+      
+      <p class="indent">
+
+	In conclusion, sentiment AI is beneficial but leads to more complications as described above such as racial bias, and loss of jobs to robots.
+
+	</p>
+	
+      
+    </div>
+    
+    <div class="footer">
+      <h3 id="center"> <b> References </b> </h3>
+
+      <p>
+
+	Alba, D. (2022, June 14). Google debate over 'sentient' bots overshadows deeper AI issues. Bloomberg.com. Retrieved September 2, 2022, from  
+
+      </p>
+
+	<p class="indent">
+	  <a href="https://www.bloomberg.com/news/articles/2022-06-14/google-has-more-pressing-ai-problems-than-sentient-bots">  https://www.bloomberg.com/news/articles/2022-06-14/google-has-more-pressing-ai-problems-than-sentient-bots </a>  </p>
+
+
+      <p>
+	Julia Angwin, J. L. (2016, May 23). Machine bias. ProPublica. Retrieved September 2, 2022, from
+      </p>
+      <p class="indent">
+	<a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"> https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing </a> </p>
+
+
+
+	
+
+
+      <p>
+	Metz, C. (2022, August 5). A.I. is not sentient. why do people say it is? The New York Times. Retrieved September 2, 2022, from
+</p>
+      <p class="indent">
+	  <a href="https://www.nytimes.com/2022/08/05/technology/ai-sentient-google.html"> https://www.nytimes.com/2022/08/05/technology/ai-sentient-google.html </a> </p> 
+
+	
+      <p>
+	Zippia 36+ Alarming Automation Job Loss Statistics 2022 Are Robots Machines And AI Coming For Your Job Comments. (2022, August 3). Retrieved September 2, 2022, from
+
+	</p>
+
+      <p class="indent">
+	<a href="https://www.zippia.com/advice/automation-and-job-loss-statistics/#:~:text=Since%202000%2C%20at%20least%20260%2C000,create%2058%20million%20new%20jobs."> https://www.zippia.com/advice/automation-and-job-loss-statistics/#:~:text=Since%202000%2C%20at%20least%20260%2C000,create%2058%20million%20new%20jobs. </a> </p>
+
+	
+    </div>
+    
+
+    
+  </body>
+  
+</html>
+
+    
+
+    

@@ -1,0 +1,25 @@
+body {
+    background-color: tan;
+}
+.header {
+    text-align: center;
+    background: linear-gradient(120deg, lightgreen  50%, green  100%);
+    
+    background-repeat: no-repeat;
+    
+    background-size: 100% 100%;
+    
+    background-position: 0  60%;
+}
+
+.team {
+    text-align: center;
+    background: #AFEEEE;
+    color: #DAA520;
+    font-family: "Comic Sans MS";
+    
+}
+ul {
+    list-style-position: inside;
+    
+}

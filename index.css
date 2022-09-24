@@ -1,4 +1,73 @@
 body {
+    
+    margin: 0;
+    
+}
+
+
+
+#sidebar {
+    
+    list-style-type: none;
+    
+    margin: 0;
+    
+    padding: 0;
+    
+    width: 25%;
+    
+    background-color: lightblue;
+    
+    position: fixed;
+    
+    height: 100%;
+    
+    overflow: auto;
+    
+}
+
+
+
+li a {
+    
+    display: block;
+    
+    color: #000;
+    
+    padding: 8px 16px;
+    
+    text-decoration: none;
+    
+}
+
+
+
+li a.active {
+    
+    background-color: #04AA6D;
+    
+    color: white;
+    
+}
+
+
+
+li a:hover {
+    
+    background-color: #555;
+    
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+body {
     background-color: beige;
 }
 h1 {
@@ -8,6 +77,40 @@ h1 {
 h2 {
     color: red;
 }
-#link {
+#link1 {
     text-align: right;
+}
+
+#link2 {
+    text-align: right;
+}
+
+* {
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+
+}
+
+div.info {
+    text-align: center;
+}
+ul.information {
+    display: inline-block;
+    text-align: left;
+}
+.center {
+    display: block;
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+    
+    width: 20%;
 }
