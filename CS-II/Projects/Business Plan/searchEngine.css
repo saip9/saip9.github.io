@@ -1,0 +1,129 @@
+
+body {
+    background-image: url("https://i.postimg.cc/FHbvXGSX/19-08-2022-asas-sdasd-as-da-s-15.jpg");
+    background-repeat: no-repeat;
+    
+    background-attachment: fixed;
+    
+    background-size: cover;
+}
+.center {
+    text-align: center;
+}
+
+mark {
+    background-color:yellow;
+    
+}
+
+.right {
+    text-align: right;
+}
+
+.identity{
+    height: 100px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+}
+
+.problem{
+    height: 100px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+}
+
+
+.ourSolution{
+    height: 100px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+}
+
+
+.targetMarket{
+    height: 100px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+}
+
+
+.competition{
+    height: 150px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+}
+
+
+.revenueStreams {
+    height: 150px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+} 
+
+.marketingActivities {
+    height: 125px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+} 
+
+
+
+
+.expenses{
+    height: 125px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+}
+
+
+
+.teamAndKeyRoles {
+    height: 300px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+} 
+
+
+.milestones {
+    height: 125px;
+    width: 800px;
+    background: #FAEBD7;
+    color: green;
+    margin: auto;
+} 
+
+
+
+
+
+.section {
+    font-size: 40px;
+    background-color: red;
+    text-align: center
+}
+
+.scolor {
+    background-color: lightgreen;
+}
+
+
+
+
