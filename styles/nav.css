@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:cursive
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 li {
     list-style:none;
@@ -37,7 +39,7 @@ nav {
     height: 100%;
     left: 0;
     background: rgb(39, 27, 12);
-    width: 90px;
+    width: 85px;
     overflow: hidden;
     transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1) ;
