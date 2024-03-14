@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>About Me</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../styles/aboutMe.css">
+<style>
+</style>
+<script src="https://kit.fontawesome.com/fcb1e3cc92.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<body>
+
+    <div id="navigation-bar"></div>
+    <script>
+        $.get("/templates/nav.html", function (data) {
+            $("#navigation-bar").replaceWith(data);
+        });
+    </script>
+    </div>
+    <h1 id="heading">About Me</h1>
+    <div id="aboutMeContent">
+
+        <img src="/images/potrait.png" alt="Potrait" id="potrait" />
+        <br>
+        <div id="space">
+        </div>
+        <p id="aboutMeInfo">
+
+            Fun Fact! My full name is Sri NagaSai Siva Balaji Paladugu. From an early age, I was interested in computers
+            and how they work. At the age of 6, I started using Microsoft Office as I was fascinated by the vast amount
+            of things you can create using the tools in Microsoft Powerpoint, Microsoft Word, and Microsoft Paint. When
+            I was 10 years old, I started learning how to create webpages using HTML and CSS with the help of Khan
+            Academy. The reason why I like Computer Science is because there is an infinite number of things you can
+            learn because new technologies are being released everyday. The main motivation for any programmer in this
+            industry is the thrust for new information and making applications better. I have been in five different
+            states in the U.S. My favorite subjects are Math and History.
+
+        </p>
+
+    </div>
+
+
+    </div>
+    <div id="menu-icon">
+        <a href="javascript:void(0);" class="icon" onclick="clickNavbar()">
+            <i class="fa-solid fa-bars fa-2xl" id="icon"></i>
+    </div>
+
+</body>
+<script>
+    function clickNavbar() {
+        var navbar = document.getElementById("navigation-bar");
+        if (screen.width < 767) {
+            if (navbar.style.display === "block") {
+                navbar.style.display = "none";
+            } else {
+                navbar.style.width = "100vw"
+                navbar.style.display = "block";
+
+            }
+        }
+
+    }
+</script>
+
+</html>

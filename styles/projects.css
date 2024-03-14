@@ -1,0 +1,92 @@
+body {
+    background-color: #462C2F;
+}
+#project-content {
+    margin-left: 100px;
+    color: white;
+    
+ 
+}
+.project-list {
+    margin-top: 80px;
+    width: 92vw;
+    height: 200px;
+    background-color: #713C46;
+    display: flex;
+    border-radius: 2cm;
+    border-bottom: 1cm;
+    border-top: 3cm;
+    position: relative;
+    
+}
+
+.project-list:hover{
+    background-color: #8A4C55;
+
+} 
+.center {
+    text-align: center;
+}
+.project-img {
+    position: absolute;
+    width: 200px;
+    background-color: #713C46;
+    height: 200px;
+}
+
+.project-heading {
+  position: relative;
+  margin-left: 220px;
+  font-size: 50px;
+}
+
+.project-photo {
+    width: 200px;
+    height: 200px;
+}
+
+#project-description {
+    margin-top: 150px;
+    margin-left: -200px;
+    font-size: 20px;
+   
+}
+
+#project-description2 {
+    margin-top: 150px;
+    margin-left: -240px;
+    font-size: 20px;
+   
+}
+
+#project-description3 {
+    margin-top: 150px;
+    margin-left: -220px;
+    font-size: 20px;
+   
+}
+
+.project-button {
+   width: 100px;
+   height: 50px;
+   background-color: #E16C5B;
+   border-radius: 3cm;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+.project-button:hover {
+    background-color: #FF6F3C;
+}
+
+.fa-brands {
+    padding-left: 33px;
+    padding-top: 25px;
+    color:white !important;
+ 
+}
+
+.project-link{
+    background: transparent !important ;
+}

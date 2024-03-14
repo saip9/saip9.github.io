@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Projects</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../styles/projects.css">
+<style>
+</style>
+<script src="https://kit.fontawesome.com/fcb1e3cc92.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<body>
+
+    <div id="navigation-bar"></div>
+    <script>
+        $.get("/templates/nav.html", function (data) {
+            $("#navigation-bar").replaceWith(data);
+        });
+    </script>
+    </div>
+    <div id="project-content">
+        <h1 class="center">Projects</h1>
+
+        <div class="project-list">
+            <h2 class="project-heading">Cafe Project</h2>
+            <br>
+            <p id="project-description">A React Native pre-ordering lunch app with the primary aim of reducing
+                the large lunch lines</p>
+            <div class="project-button">
+                <a href="https://github.com/CSAllenISD/2023-ISP-CafeProject" target="_blank" class="project-link"> <i
+                        class="fa-brands fa-github fa-2xl" id="github-logo"></i> </a>
+            </div>
+            <div class="project-img">
+                <img src="/images/cafe-project.png" alt="CafeProject" class="project-photo" />
+            </div>
+
+        </div>
+
+        <div class="project-list">
+            <h2 class="project-heading">Duty Schedule</h2>
+            <br>
+            <p id="project-description2">A React web app that Allow Allen ISD teachers and administrators to manage
+                conference periods</p>
+            <div class="project-button">
+                <a href="https://github.com/Allen-ISD-Computer-Science/IRL_DutySchedule_2024" target="_blank"
+                    class="project-link"> <i class="fa-brands fa-github fa-2xl"></i> </a>
+            </div>
+            <div class="project-img">
+                <img src="/images/IRL Dev-logos.jpeg" alt="DutySchedule" class="project-photo" />
+            </div>
+
+        </div>
+
+        <div class="project-list">
+            <h2 class="project-heading">STEAM Life</h2>
+            <br>
+            <p id="project-description3">A web and mobile application for students to experience the STEAM Center to the
+                fullest</p>
+            <div class="project-button">
+                <a href="https://github.com/AllenSTEAMLife" target="_blank" class="project-link"> <i
+                        class="fa-brands fa-github fa-2xl"></i> </a>
+            </div>
+            <div class="project-img">
+                <img src="/images/STEAM_Life_Picture_Holder.png" alt="CafeProject" class="project-photo" />
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

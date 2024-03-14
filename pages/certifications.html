@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Certifications</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../styles/certifications.css">
+<style>
+</style>
+<script src="https://kit.fontawesome.com/fcb1e3cc92.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<body>
+
+    <div id="navigation-bar"></div>
+    <script>
+        $.get("/templates/nav.html", function (data) {
+            $("#navigation-bar").replaceWith(data);
+        });
+    </script>
+    </div>
+
+    <div id="certification-content">
+        <h1 class="center">Certifications</h1>
+        <a href="https://www.credly.com/badges/c184e485-5719-46a0-8dea-a19394cde473/public_url" target="_blank">
+            <div class="certification-img">
+                <img src="/images/github-foundations.png" alt="github-foundations" class="certification-photo" />
+            </div>
+        </a>
+        <div class="space"">
+
+        </div>
+        <a href=" https://www.credly.com/badges/f0d569e7-1072-4400-b80d-dae903202c7f/public_url" target="_blank">
+            <div id="certification-img-nocolor">
+                <img src="/images/introduction-to-cybersecurity (1).png" alt="introduction-to-cybersecurity"
+                    class="certification-photo" />
+            </div>
+            </a>
+            <div class="space"">
+
+            </div>
+
+            <a href="
+                https://www.freecodecamp.org/certification/fcc6f4e100e-a364-4352-ab7c-3c48ef139bad/responsive-web-design"
+                target="_blank">
+                <div class="certification-img">
+                    <img src="/images/free-code-camp-certification.jpeg" alt="free-code-camp-certification"
+                        class="certification-photo" />
+                </div>
+                </a>
+
+            </div>
+
+</body>
+
+</html>

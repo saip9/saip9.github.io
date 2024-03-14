@@ -1,0 +1,52 @@
+body {
+    background-color: #462C2F;
+}
+
+#potrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 350px;
+    margin-top: 50px;
+
+}
+#aboutMeContent {
+  
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    overflow-wrap:break-word;
+    place-items: center;
+    display: flex;
+    padding:50px;
+   
+}
+
+#heading {
+    text-align: center;
+    color: white;
+}
+
+#aboutMeInfo {
+    font-size: 20px;
+    border-style: inset;
+    background-color: antiquewhite;
+    border-width: 0.2cm;
+    border-color:rgb(39, 27, 12);
+}
+
+#space {
+    padding-left: 50px;
+}
+
+@media (max-width: 767px) { 
+    #icon {
+        position: absolute;
+        margin-bottom: 20px;
+        padding-right: 50px;
+        color: red;
+    }
+
+ }

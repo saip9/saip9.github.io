@@ -1,0 +1,42 @@
+
+body {
+    height: 100%;
+    background: url('/images/john-towner-JgOeRuGD_Y4-unsplash.jpg') no-repeat center fixed;     
+    background-size: cover;
+}
+#title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid wheat;
+    color: white;
+    border-style:groove;
+    padding:10px;
+    font-size: 50px;
+}
+
+#portfolio_name {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color:rgb(178, 67, 15);
+    text-decoration: underline;
+    font-size: 30px;
+}
+#icon {
+    padding-top: 20px;
+    color: white;
+}
+
+
+@media (max-width: 767px) { 
+    #menu-icon {
+        padding-top: 20px;
+        color: white;
+    }
+
+ }

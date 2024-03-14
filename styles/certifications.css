@@ -1,0 +1,50 @@
+body {
+    background-color: #462C2F;
+}
+#certification-content {
+    margin-left: 120px;
+    color: white;
+    justify-content: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+
+.certification-img:hover{
+    background-color: #8A4C55;
+
+} 
+.center {
+   text-align: center;
+}
+.certification-img {
+    margin-top: 5vh;
+    position: absolute;
+    width: 200px;
+    background-color: #713C46;
+    height: 200px;
+}
+
+#certification-img-nocolor {
+    margin-top: 5vh;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+
+.certification-photo {
+    width: 200px;
+    height: 200px;
+}
+
+
+.certification-link{
+    background: transparent !important ;
+}
+
+.space {
+    padding-top: 30vh;
+}

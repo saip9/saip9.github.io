@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Resume</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/styles/resume.css">
+<style>
+</style>
+<script src="https://kit.fontawesome.com/fcb1e3cc92.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<body>
+
+  <div id="navigation-bar"></div>
+  <script>
+    $.get("/templates/nav.html", function (data) {
+      $("#navigation-bar").replaceWith(data);
+    });
+  </script>
+  </div>
+
+  <div id="resume-content">
+    <iframe src="../documents/Sai Paladugu One Page Resume.pdf" class="pdf-view"></iframe>
+    <a href="../documents/Sai Paladugu One Page Resume.pdf" download class="resume-link">
+      <div class="resume-button">
+        One Page Resume
+
+      </div>
+    </a>
+
+    <iframe src="../documents/Sai Paladugu Expanded Resume.pdf" class="pdf-view"></iframe>
+    <a href="../documents/Sai Paladugu Expanded Resume.pdf" download class="resume-link">
+      <div class="resume-button">
+        Expanded Resume
+
+      </div>
+    </a>
+
+  </div>
+
+</body>
+
+</html>
